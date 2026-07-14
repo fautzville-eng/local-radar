@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="View your location and local weather radar."
+    />
+
+    <title>Detector de pluie</title>
+  </head>
+
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="title-section">
+          <p class="app-label">Mouille, mouille tu pas</p>
+          <h1>Detector de pluie.</h1>
+
+          <p class="subtitle">
+            Trouve touer pi si mouille ou pas.
+          </p>
+        </div>
+
+        <div class="controls">
+          <button
+            type="button"
+            id="location-button"
+            class="primary-button"
+          >
+            Ousser ke jsuuis?
+          </button>
+
+          <button
+            type="button"
+            id="radar-button"
+            class="secondary-button"
+            disabled
+          >
+            Montre si mouille ou pas.
+          </button>
+        </div>
+
+        <p id="status-message" class="status-message">
+          ter you?
+        </p>
+      </header>
+
+      <main class="map-section">
+        <div
+          id="map"
+          aria-label="Interactive world map"
+        ></div>
+      </main>
+
+      <footer class="app-footer">
+        <p>
+          Location is only requested after you press the location button.
+        </p>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
